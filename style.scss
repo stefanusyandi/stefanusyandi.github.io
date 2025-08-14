@@ -1,0 +1,23 @@
+.button {
+    cursor: pointer;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 10px;
+
+    @keyframes growShrink {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.1);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+
+    &.clicked {
+        animation: growShrink 0.1s ease-in-out;
+    }
+}
